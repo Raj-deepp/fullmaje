@@ -1,69 +1,89 @@
 <html>
+
 <head>
-<title>Heyy</title>
-<style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heyy</title>
+  <style>
+    p {
+      text-align: center;
+      font-size: 48px;
+      font-family: "Matura MT Script Capitals", Oswald;
+    }
 
-.photo{
-  height: 350px;
-  width: 350px;
-  object-fit: contain;
-  object-position: center;
-  margin-top: -60px;
-}
-p {
-text-align: center;
-font-size: 48px;
-font-family: "Matura MT Script Capitals", Oswald;
-}
-img {
-display: block;
-margin: 0 auto;
-width: 25%;
-}
+    img {
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+      width: 25%;
+    }
 
-#rajdeep1 {
-  font-family: "Comic Sans MS", Oswald;
-position: fixed;
-top: 80%;
-left: 55%;
-transform: translate(-50%, -50%);
-margin-top: -50px
-}
-#rajdeep2 {
-  font-family: "Comic Sans MS", Oswald;
-position: fixed;
-top: 78%;
-left: 40%;
-margin-top: -50px
-}
-</style>
+    .btn {
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%, 70%);
+      width: 30%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    #rajdeep1 {
+      padding: 7px;
+      background-color: rgb(236, 196, 156);
+      border-radius: 10px;
+      border-color: rgb(206, 135, 49);
+      font-family: "Comic Sans MS", Oswald;
+
+    }
+
+    #rajdeep2 {
+      position: relative;
+      padding: 7px;
+      background-color: rgb(236, 196, 156);
+      border-radius: 10px;
+      border-color: rgb(206, 135, 49);
+      font-family: "Comic Sans MS", Oswald;
+      left: 0%;
+    }
+
+    @media screen and (max-width: 450px) {
+      img {
+        width: 90%;
+        
+      }
+      .btn{width: 64%;}
+    }
+  </style>
 </head>
+
 <body>
-<p>Can we hang out soon?</p>
-<img class="photo" src="https://media.tenor.com/Qy8LgjNBJ54AAAAd/kitten-yes-or-no.gif">
+  <p>Can we hang out soon?</p>
+  <img src="https://media.tenor.com/Qy8LgjNBJ54AAAAd/kitten-yes-or-no.gif">
 
-<button id="rajdeep1">YES BABY</button>
-<button id="rajdeep2">NOPES</button>
-<script>
-const button2 = document.getElementById('rajdeep2');
-let left = 40;
-button2.addEventListener('mouseover', function() {
-  if(left == 40){
-    left = 60;
-  }else{
-    left = 40;
-  }
-  this.style.left = left + '%';
-});
+  <div class="btn">
+    <button id="rajdeep1">YES BABY</button>
+    <button id="rajdeep2">NOPES</button>
+  </div>
+  <script>
+    const button2 = document.getElementById('rajdeep2');
+    let left = 0;
+    button2.addEventListener('mouseover', function () {
+      if (left == 0) {
+        left = 30;
+      } else {
+        left = 0;
+      }
+      this.style.left = left + '%';
+    });
 
-</script>
-<script>document.getElementById('rajdeep1').addEventListener('click', function() {
-alert('NO...I REJECT YOU\n -RAJDEEP');
-});
-</script>
- <script>document.getElementById('rajdeep2').addEventListener('click', function() {
-   alert('PLEASE CLICK YES');
-  });
- </script>
+  </script>
+  <script>document.getElementById('rajdeep1').addEventListener('click', function () {
+      alert('N0...HE REJECTS YOU\n -RAJDEEP');
+    });
+  </script>
+  <script>document.getElementById('rajdeep2').addEventListener('click', function () {
+      alert('PLEASE CLICK YES');
+    });
+  </script>
 </body>
+
 </html>
