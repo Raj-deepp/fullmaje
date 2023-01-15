@@ -2,6 +2,14 @@
 <head>
 <title>Heyy</title>
 <style>
+
+.photo{
+  height: 350px;
+  width: 350px;
+  object-fit: contain;
+  object-position: center;
+  margin-top: -60px;
+}
 p {
 text-align: center;
 font-size: 48px;
@@ -14,23 +22,27 @@ width: 25%;
 }
 
 #rajdeep1 {
+  font-family: "Comic Sans MS", Oswald;
 position: fixed;
 top: 80%;
 left: 55%;
 transform: translate(-50%, -50%);
+margin-top: -50px
 }
 #rajdeep2 {
+  font-family: "Comic Sans MS", Oswald;
 position: fixed;
 top: 78%;
 left: 40%;
+margin-top: -50px
 }
 </style>
 </head>
 <body>
 <p>Can we hang out soon?</p>
-<img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+<img class="photo" src="https://media.tenor.com/Qy8LgjNBJ54AAAAd/kitten-yes-or-no.gif">
 
-<button id="rajdeep1">YES BABY!</button>
+<button id="rajdeep1">YES BABY</button>
 <button id="rajdeep2">NOPES</button>
 <script>
 const button2 = document.getElementById('rajdeep2');
@@ -46,7 +58,7 @@ button2.addEventListener('mouseover', function() {
 
 </script>
 <script>document.getElementById('rajdeep1').addEventListener('click', function() {
-alert('YAYY...THANK YOU...LOVE U');
+alert('YAYY...SEE YOU SOON...LOVE YOU\n -RAJDEEP');
 });
 </script>
  <script>document.getElementById('rajdeep2').addEventListener('click', function() {
